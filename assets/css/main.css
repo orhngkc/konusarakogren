@@ -1,17 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap');
 
+/* generals */
 body{
     font-family: 'Rubik', sans-serif;
     background-color: #f9f9ff;
     position: relative;
+    color: #353353;
+    text-decoration: none!important;
 }
 
-@media (min-width: 1366px){
-    .container {
-        max-width: 1080px;
-    }
+header{
+    background-color: #f9f9ff;
 }
 
+a:link{
+    text-decoration: none;
+}
+
+/* header, navbar */
 .navbar-light .navbar-nav .nav-link {
     color: #353353;
     font-size: 16px;
@@ -23,6 +30,7 @@ body{
 .nav-link:hover{
     color: #FFD15C!important;
 }
+
 .active a{
     color: #FFD15C !important;
 }
@@ -37,10 +45,106 @@ body{
     font-weight: 900;
 }
 
-#logo-span{
-    color: #FF4C60;
+.works-btn{
+    background-color: #FF4C60;
+    border: #FF4C60;
 }
+
+/* hero container */
 
 .hero-div{
     height: 100vh;
+    background-image: url('/assets/images/shapes2.png');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.section-setting{
+    margin-top: 10vh;
+    min-height: 40vh;
+}
+
+.section-title{
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.section-title:after{
+    content: '';
+    border-bottom: 6px #FFD15C dotted;
+    width: 7vh;
+    display: block;
+    margin-bottom: 3vh;
+}
+
+#about-container{
+    padding: 10px;
+    margin-bottom: 4vh;
+    border-radius: 1vh;
+    text-align: left;
+    border: 1px solid #ebebeb;
+}
+
+
+.skills{
+    float: right;
+    color: #353353;
+    text-decoration: none;
+}
+
+.works-example{
+    padding: 33%;
+}
+
+.card{
+    border-radius: 5vh;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-1{
+    background-image: url('/assets/images/works1.png');
+
+}
+.card-2{
+    background-image: url('/assets/images/works2.jpg');
+
+}
+.card-3{
+    background-image: url('/assets/images/works3.png');
+
+}
+.card-4{
+    background-image: url('/assets/images/works4.jpg');
+
+}
+.card-5{
+    background-image: url('/assets/images/works5.png');
+
+}
+.card-6{
+    background-image: url('/assets/images/works6.png');
+
+}
+
+.works-category{
+    text-decoration: none;
+    color: #353353;
+    margin-right: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+
+/* media */
+
+@media (min-width: 1366px){
+    .container {
+        max-width: 1080px;
+    }
 }
