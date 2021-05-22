@@ -28,13 +28,13 @@
                   <a class="nav-link" href="#about">Hakkımda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#works  ">Yaptığımız İşler</a>
+                  <a class="nav-link" href="#works">İşlerim</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Yorumlar</a>
+                  <a class="nav-link" href="#comments">Yorumlar</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">İletişim</a>
+                  <a class="nav-link" href="#contact">İletişim</a>
                 </li>
               </ul>
             </div>
@@ -42,9 +42,9 @@
         </div>
       </header>
 
-      <div class="container">
-        <div class="row hero-div d-flex align-items-center">
-          <div>
+      <div>
+        <div class="hero-div d-flex align-items-center">
+          <div class="container">
             <div class="col-12 d-flex justify-content-center"> 
               <img class="justify-content-center" src="/assets/images/unnamed.png" height="150" width="150">
             </div>
@@ -58,6 +58,12 @@
               <button type="button" class="btn btn-danger mt-3">
                 <a href="https://github.com/orhngkc" class="text-white" target="_blank">GitHub</a>
               </button>
+            </div>
+
+            <div class="col-12  width-100 d-flex justify-content-center  mt-4"> 
+              <a href="#about">
+                <img src="assets/images/down.gif" height="50">
+              </a>
             </div>
           </div>
         </div>
@@ -152,7 +158,7 @@
       <section id="works" class="section-setting">
         <div class="container">
           <div class="row">
-            <h1 class="section-title">Yaptığım İşler</h1>
+            <h1 class="section-title">İşlerim</h1>
           </div>
 
           <div class="row">
@@ -165,20 +171,19 @@
           </div>
 
           <div class="row">
-            <div class="col-4 d-flex justify-content-center php">
+            <div class="col-4 col-md-4 col-sm-4 d-flex justify-content-center php">
               <div class="card card-1" style="width: 18rem;">
                 <div class="card-body">
                 </div>
               </div>
             </div>
-            <div class="col-4 d-flex justify-content-center php">
+            <div class="col-4 col-md-4 col-sm-4 d-flex justify-content-center php">
               <div class="card card-2" style="width: 18rem;">
-                <img class="card-img-top" width="310" height="210" src="/assets/images/works2.jpg" alt="Card image cap">
                 <div class="card-body">
                 </div>
               </div>
             </div>
-            <div class="col-4 d-flex justify-content-centernode">
+            <div class="col-4 col-md-4 col-sm-4 d-flex justify-content-centernode">
               <div class="card card-3" style="width: 18rem;">
                 <div class="card-body">
                 </div>
@@ -187,21 +192,20 @@
           </div>
 
           <div class="row mt-4">
-            <div class="col-4 d-flex justify-content-center vue">
+            <div class="col-4 d-flex justify-content-center php">
               <div class="card card-4" style="width: 18rem;">
                 <div class="card-body">
                 </div>
               </div>
             </div>
-            <div class="col-4 d-flex justify-content-center vue">
+            <div class="col-4 d-flex justify-content-center php">
               <div class="card card-5" style="width: 18rem;">
                 <div class="card-body">
                 </div>
               </div>
             </div>
-            <div class="col-4 d-flex justify-content-center vue">
+            <div class="col-4 d-flex justify-content-centernode">
               <div class="card card-6" style="width: 18rem;">
-                <img class="card-img-top" width="310" height="210" src="/assets/images/works6.png" alt="Card image cap">
                 <div class="card-body">
                 </div>
               </div>
@@ -209,14 +213,91 @@
           </div>
 
           
+          
         </div>
       </section>
 
+      <section id="comments" class="section-setting">
+       <div class="container">
+        <div class="row">
+          <h1 class="section-title">Yorumlar <span id="comment-counter" data-value="0">(0)</span></h1>
+        </div>
+
+        <div class="row">
+          <div id="comment-wrapper">
+            <!-- comments comes here -->
+            <h3 class="mb-4" id="none-comment">Henüz yorum yapılmamış.</h3>
+          </div>
+
+          <form>
+            <div class="col-12">
+              <label for="exampleFormControlTextarea1" class="form-label">Bir yorum yazın.</label>
+              <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end">
+              <button type="button" id="commentBtn" class="btn btn-danger mt-3">
+                Gönder
+              </button>
+            </div>
+          </form>
+         </div>
+       </div>
+      </section>
+
+      <section id="contact" class="section-setting">
+        <div class="container">
+         <div class="row">
+           <h1 class="section-title">İletişim</span></h1>
+         </div>
+ 
+         <div class="row">
+             <div class="col-5">
+               <label class="form-label">
+                 <a>Bana aşağıdaki bilgilerle ulabilirsiniz.</a>
+               </label>
+
+               <div class="row">
+                <div class="col mb-4">
+                    <a href="https://www.linkedin.com/in/orhangkc/" target="_blank">Linkedin</a>
+                    <a href="https://www.github.com/orhngkc/" target="_blank">Github</a>
+                </div>
+              </div>
+             </div>
+ 
+             <div class="col-7">
+              <form>
+                <div class="form-group  mb-4">
+                  <label for="exampleFormControlInput1">Adınız Soyadınız</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Orhan Gökçe">
+                </div>
+                <div class="form-group mb-4">
+                  <label for="exampleFormControlTextarea1">Mesajınız</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Sen çok iyi bir geliştiricisin..." rows="3"></textarea>
+                </div>
+                <div class="form-group mb-4  d-flex justify-content-end">
+                  <button type="button" class="btn btn-primary">Mesajını gönder!</button>
+                </div>
+              </form>
+             </div>
+          </div>
+        </div>
+       </section>
+
+       
+       <div>
+        <div class="hero-div-footer d-flex align-items-center">
+          <div class="container d-flex justify-content-center">
+           <h5>Orhan Gökçe tarafından Front-end test projesi için yapılmıştır.</h5>
+          </div>
+        </div>
+      </div>
 
     <!-- scripts -->
     <script src="/assets/js/jquery-3.2.1.slim.min.js"></script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/comments.js"></script>
     <script src="/assets/js/nav.js"></script>
   </body>
 </html>

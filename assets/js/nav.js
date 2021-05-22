@@ -19,5 +19,5 @@ worksCategory.forEach(element => {
     element.addEventListener('click', (e) => {
         worksCategory.forEach(element => {element.classList.remove(textPrimary)})
         element.classList.add(textPrimary)
-    })
+    })        
 });

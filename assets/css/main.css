@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 /* generals */
 body{
@@ -8,6 +9,11 @@ body{
     position: relative;
     color: #353353;
     text-decoration: none!important;
+}
+
+button{
+    background-color: #FF4C60!important;
+    border-color: #FF4C60!important;
 }
 
 header{
@@ -54,18 +60,21 @@ a:link{
 
 .hero-div{
     height: 100vh;
+    width: 100%;
     background-image: url('/assets/images/shapes2.png');
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: auto;  
 }
 
 .width-100{
     width: 100%;
 }
 
+/* section */
 .section-setting{
     margin-top: 10vh;
     min-height: 40vh;
+    min-width: 100%;
 }
 
 .section-title{
@@ -99,6 +108,8 @@ a:link{
     padding: 33%;
 }
 
+
+/* cards */
 .card{
     border-radius: 5vh;
     cursor: pointer;
@@ -106,30 +117,32 @@ a:link{
     background-size: cover;
 }
 
-.card-1{
-    background-image: url('/assets/images/works1.png');
 
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+    min-width: 250px;
+    min-height: 250px;
+}
+.card-1{
+    background-image: url('/assets/images/works3.png');
 }
 .card-2{
     background-image: url('/assets/images/works2.jpg');
-
 }
 .card-3{
     background-image: url('/assets/images/works3.png');
-
 }
 .card-4{
     background-image: url('/assets/images/works4.jpg');
 
 }
 .card-5{
-    background-image: url('/assets/images/works5.png');
-
+    background-image: url('/assets/images/works3.png');
 }
 .card-6{
-    background-image: url('/assets/images/works6.png');
-
+    background-image: url('/assets/images/works1.jpg');
 }
+
+/* works */
 
 .works-category{
     text-decoration: none;
@@ -139,6 +152,34 @@ a:link{
     cursor: pointer;
 }
 
+/* comments */
+.comment-setting{
+    min-height: 10vh;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 1vh;
+    margin-bottom: 3vh;
+}
+
+.btn-close{
+    float: right;
+    background-color: transparent!important;
+}
+
+.time{
+    font-size: 2vh;
+    color: #353353;
+    text-decoration: none;
+}
+
+/* footer */
+
+.hero-div-footer{
+    height: 10vh;
+    background-image: url('/assets/images/shapes2.png');
+    background-repeat: repeat;
+    background-size: auto;  
+}
 
 
 /* media */
