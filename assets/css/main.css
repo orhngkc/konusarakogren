@@ -33,6 +33,11 @@ a:link{
     transition: 0.5s;
 }
 
+.navbar-toggler{
+    background-color: transparent!important;
+    border-color: #353353!important;
+}
+
 .nav-link:hover{
     color: #FFD15C!important;
 }
@@ -123,7 +128,7 @@ a:link{
     min-height: 250px;
 }
 .card-1{
-    background-image: url('/assets/images/works3.png');
+    background-image: url('/assets/images/work1.jpg');
 }
 .card-2{
     background-image: url('/assets/images/works2.jpg');
@@ -136,7 +141,7 @@ a:link{
 
 }
 .card-5{
-    background-image: url('/assets/images/works3.png');
+    background-image: url('/assets/images/works5.png');
 }
 .card-6{
     background-image: url('/assets/images/works1.jpg');
@@ -175,7 +180,7 @@ a:link{
 /* footer */
 
 .hero-div-footer{
-    height: 10vh;
+    height: 15vh;
     background-image: url('/assets/images/shapes2.png');
     background-repeat: repeat;
     background-size: auto;  
