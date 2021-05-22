@@ -5,6 +5,11 @@ const commentCounter = document.getElementById('comment-counter');
 const noneComment = document.getElementById('none-comment');
 const delay = 1000
 
+
+/**
+ * This function createa a comment
+ * @param {string} content 
+ */
 const createComment = (content) => {
     const date = new Date();
     const newDataset = parseInt(commentCounter.dataset.value) + 1;
@@ -22,6 +27,10 @@ const createComment = (content) => {
     }, delay);
 }
 
+/**
+ * This function deletes a comment
+ * @param {string} id 
+ */
 const deleteComment = (id) => {
     const newDatasetReduce = parseInt(commentCounter.dataset.value) - 1;
     const item = document.getElementById(id);
@@ -30,7 +39,9 @@ const deleteComment = (id) => {
     commentCounter.setAttribute('data-value', newDatasetReduce)
  }
  
-
+/**
+ * this function gives a loading effect
+ */
 const loading = () => {
     commentBtn.innerHTML = `
     <div class="d-flex justify-content-center">
